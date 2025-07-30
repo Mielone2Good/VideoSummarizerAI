@@ -125,16 +125,21 @@ Demonstrates the successful execution of unit tests, ensuring the app's core fun
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Mielone2Good/summarizer.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Mielone2Good/VideoSummarizerAI.svg?style=for-the-badge
 [contributors-url]: https://github.com/Mielone2Good/VideoSummarizerAI/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Mielone2Good/summarizer.svg?style=for-the-badge
+
+[forks-shield]: https://img.shields.io/github/forks/Mielone2Good/VideoSummarizerAI.svg?style=for-the-badge
 [forks-url]: https://github.com/Mielone2Good/VideoSummarizerAI/network/members
-[stars-shield]: https://img.shields.io/github/stars/Mielone2Good/summarizer.svg?style=for-the-badge
+
+[stars-shield]: https://img.shields.io/github/stars/Mielone2Good/VideoSummarizerAI.svg?style=for-the-badge
 [stars-url]: https://github.com/Mielone2Good/VideoSummarizerAI/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Mielone2Good/summarizer.svg?style=for-the-badge
+
+[issues-shield]: https://img.shields.io/github/issues/Mielone2Good/VideoSummarizerAI.svg?style=for-the-badge
 [issues-url]: https://github.com/Mielone2Good/VideoSummarizerAI/issues
+
 [license-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=for-the-badge
 [license-url]: https://creativecommons.org/licenses/by-nc/4.0/
+
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/mikolajjaros/
 
