@@ -32,6 +32,7 @@ async def process_video(url: Union[str, None] = None):
 
     ai = app.state.service
     transcript = get_transcript(url)
+    
     if transcript['status'] != 'ok':
         return {
             'error':transcript['error'], 
