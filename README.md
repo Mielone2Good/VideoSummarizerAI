@@ -105,19 +105,20 @@ Author: **Mikołaj Jaros. (aka MixDevv)**
 ## 📷 Screenshots
 
 ### Request Sent Test on Phone Ad  
-![Request Sent Test on Phone Ad](screenshots/RequestSent_test_on_phone_ad.png)  
+<img width="2168" height="1306" alt="RequestSent_test_on_phone_ad" src="https://github.com/user-attachments/assets/4559673e-1bc7-40b5-9d23-1ce8b391c2c5" />
 This screenshot shows the app sending a request and receiving a response from the server, highlighting the GPU usage during processing.
+
 
 ---
 
 ### Test Result Phone Ad  
-![Test Result Phone Ad](screenshots/TestResult_PhoneAd.png)  
+<img width="865" height="360" alt="TestResult_PhoneAd" src="https://github.com/user-attachments/assets/1f4c75dc-f40f-459d-9b51-e13d08f7f944" />
 A detailed view of the server response corresponding to the previous request, showing the summarized content returned by the API.
 
 ---
 
 ### Unit Tests Shopify Tutorial  
-![Unit Tests Shopify Tutorial](screenshots/UnitTests_ShopifyTutorial.png)  
+<img width="1572" height="677" alt="UnitTests_ShopifyTutorial" src="https://github.com/user-attachments/assets/38274e32-d92d-4c71-8b90-df07f94d9251" />
 Demonstrates the successful execution of unit tests, ensuring the app's core functionalities work correctly.
 
 
