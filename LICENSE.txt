@@ -1,0 +1,14 @@
+Creative Commons Attribution-NonCommercial 4.0 International Public License
+
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License ("Public License").
+
+You may not use the Licensed Material for commercial purposes.
+
+You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-nc/4.0/
+
+Author: Mikolaj J (Aka. MixDevv)
+
+This license allows non-commercial use, copying, distribution, and modification with attribution to the original author. Commercial use is strictly prohibited.
