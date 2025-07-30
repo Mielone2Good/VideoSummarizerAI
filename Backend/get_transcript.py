@@ -1,4 +1,5 @@
 from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api._errors import NoTranscriptFound
 import re
 
 def get_video_id(url: str) -> str:
@@ -22,8 +23,9 @@ def get_transcript(url: str) -> dict:
         ytt_api = YouTubeTranscriptApi()
         transcript = ytt_api.fetch(video_id=video_id)
         full_transcript = " ".join(snippet.text for snippet in transcript)
-        return {'transcript': full_transcript, 'status': 'success'}
-    
+        return {'transcript': full_transcript, 'status': 'ok'}
+    except NoTranscriptFound as e:
+        return {'status': 'error', 'error': 'No transcripts found for this video.'}
     except Exception as e:
         return {'error': e, 'status': 'error'}
     

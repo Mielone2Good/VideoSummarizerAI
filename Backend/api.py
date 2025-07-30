@@ -21,7 +21,7 @@ def root():
     return {'Hello':'World'}
 
 @app.get("/summarize-video")
-async def process_video(url: Union[str, None] = None):
+async def process_video(url: Union[str, None] = None, length: Union[int, None] = 500):
     """
     Endpoint
     Summarize youtube video using local LLM
@@ -32,15 +32,15 @@ async def process_video(url: Union[str, None] = None):
 
     ai = app.state.service
     transcript = get_transcript(url)
-    
+
     if transcript['status'] != 'ok':
         return {
             'error':transcript['error'], 
             'received_url': url, 
             'status':transcript['status']
         }
-    
-    response = ai.summarize_text(transcript['transcript'])
+
+    response = ai.summarize_text(text = transcript['transcript'], output_length = length)
 
     if response['status'] == 'ok':
         return {

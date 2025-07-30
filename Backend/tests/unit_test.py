@@ -26,8 +26,9 @@ class TestBackend(unittest.TestCase):
 
 
     def test_everything(self):
-        url = 'https://www.youtube.com/watch?v=Ag3NWYr5CD8&ab_channel=MacVince'
+        url = 'https://www.youtube.com/watch?v=vhNJEDWqGL8&t=301s&ab_channel=Apple'
         transcript = get_transcript(url)
+        print(transcript)
         ai = YoutubeSummarizerAI()
         test = ai.summarize_text(text = transcript['transcript'])
         

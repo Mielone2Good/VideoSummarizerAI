@@ -6,7 +6,7 @@ class YoutubeSummarizerAI():
         self.ai_core.load_model()
         self.max_model_input = self.ai_core.max_model_input
 
-    def summarize_text(self, text: str) -> str:
+    def summarize_text(self, text: str, output_length: int = 500) -> str:
         """
         Summarize long text/document with local LLM, 
 
@@ -22,7 +22,7 @@ class YoutubeSummarizerAI():
         while not finished and attempt < 3:
             if self.max_model_input > self.ai_core.get_tokens_length(text = text_to_summarize):
                 try:
-                    result = self.ai_core.summarize(text = text_to_summarize, max_output_length = 500)
+                    result = self.ai_core.summarize(text = text_to_summarize, max_output_length = output_length)
                     return {'summary':result, 'status':'ok'}
                 except Exception as e:
                     return {'error':e, 'status':'error'}
