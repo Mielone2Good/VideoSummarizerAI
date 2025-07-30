@@ -9,7 +9,9 @@ class YoutubeSummarizerAI():
     def summarize_text(self, text: str) -> str:
         """
         Summarize long text/document with local LLM, 
+        
         Algorithm will split text into chunks and generate sub-summary for each chunk
+        Splitting chunks and generating sub-summary until text matches maximum model input length
         then connect all chunks to generate final summary.
         """
         text_to_summarize = text

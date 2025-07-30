@@ -13,6 +13,7 @@ def get_video_id(url: str) -> str:
 def get_transcript(url: str) -> dict:
     """
     Generate a transcript for a YouTube video given its URL.
+    Version 1.0: Only english transcript
     """
     video_id = get_video_id(url)
     if not video_id: return {'error': f'No video ID found in url: {url}', 'status': 'error'}
