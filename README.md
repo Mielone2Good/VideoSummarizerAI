@@ -15,7 +15,7 @@
     <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" height="80">
   </a>
 
-  <h3 align="center">Video Summarizer using facebook/bart-large-cnn</h3>
+  <h3 align="center">Video Summarizer using Local LLM (facebook/bart-large-cnn)</h3>
 
   <p align="center">
     Submit a YouTube URL and get an AI-generated summary of the video.
