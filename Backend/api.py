@@ -31,8 +31,15 @@ async def process_video(url: Union[str, None] = None):
         return {'error':'please provide youtube video url'}
 
     ai = app.state.service
-    text = get_transcript(url)['transcript']
-    response = ai.summarize_text(text)
+    transcript = get_transcript(url)
+    if transcript['status'] != 'ok':
+        return {
+            'error':transcript['error'], 
+            'received_url': url, 
+            'status':transcript['status']
+        }
+    
+    response = ai.summarize_text(transcript['transcript'])
 
     if response['status'] == 'ok':
         return {
