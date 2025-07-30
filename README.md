@@ -100,7 +100,27 @@ Author: **Mikołaj Jaros. (aka MixDevv)**
 * [FastAPI](https://fastapi.tiangolo.com/)
 * [Python Software Foundation](https://www.python.org/)
 
+--- 
+
+## 📷 Screenshots
+
+### Request Sent Test on Phone Ad  
+![Request Sent Test on Phone Ad](screenshots/RequestSent_test_on_phone_ad.png)  
+This screenshot shows the app sending a request and receiving a response from the server, highlighting the GPU usage during processing.
+
 ---
+
+### Test Result Phone Ad  
+![Test Result Phone Ad](screenshots/TestResult_PhoneAd.png)  
+A detailed view of the server response corresponding to the previous request, showing the summarized content returned by the API.
+
+---
+
+### Unit Tests Shopify Tutorial  
+![Unit Tests Shopify Tutorial](screenshots/UnitTests_ShopifyTutorial.png)  
+Demonstrates the successful execution of unit tests, ensuring the app's core functionalities work correctly.
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
@@ -117,7 +137,5 @@ Author: **Mikołaj Jaros. (aka MixDevv)**
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/mikolajjaros/
 
-
----
 
 
