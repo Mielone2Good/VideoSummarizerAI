@@ -9,6 +9,6 @@ You must give appropriate credit, provide a link to the license, and indicate if
 Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 Human-readable summary: https://creativecommons.org/licenses/by-nc/4.0/
 
-Author: Mikolaj J (Aka. MixDevv)
+Author: Mikolaj Jaros (Aka. MixDevv)
 
 This license allows non-commercial use, copying, distribution, and modification with attribution to the original author. Commercial use is strictly prohibited.
