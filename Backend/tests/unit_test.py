@@ -9,7 +9,7 @@ class TestBackend(unittest.TestCase):
         test = get_transcript(url)
         self.assertIsNotNone(test)
 
-    def test_ai(self):
+    def test_ai_core(self):
         text = """Ella missed the last train home. Rain poured as she stood alone on the platform, 
         clutching her soaked coat. Her phone was dead, 
         and the station was silent—except for the hum of distant thunder. 
@@ -21,7 +21,16 @@ class TestBackend(unittest.TestCase):
         
         ai = YoutubeSummarizerAI()
         test = ai.summarize_text(text = text)
+        
+        self.assertIsNotNone(test)
 
+
+    def test_everything(self):
+        url = 'https://www.youtube.com/watch?v=fQZntbd5QGI&ab_channel=MeticsMedia'
+        transcript = get_transcript(url)
+        ai = YoutubeSummarizerAI()
+        test = ai.summarize_text(text = transcript['transcript'])
+        
         print('\n\n AI SUMMARY -------------------------- \n\n')
         print(test)
         print('\n\n')

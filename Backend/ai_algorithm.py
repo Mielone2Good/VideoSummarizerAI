@@ -9,19 +9,20 @@ class YoutubeSummarizerAI():
     def summarize_text(self, text: str) -> str:
         """
         Summarize long text/document with local LLM, 
-        
+
         Algorithm will split text into chunks and generate sub-summary for each chunk
         Splitting chunks and generating sub-summary until text matches maximum model input length
         then connect all chunks to generate final summary.
         """
         text_to_summarize = text
         finished = False
+        attempt = 0
         new_max_chunk_length = self.max_model_input - 80
 
-        while not finished:
+        while not finished and attempt < 3:
             if self.max_model_input > self.ai_core.get_tokens_length(text = text_to_summarize):
                 try:
-                    result = self.ai_core.summarize(text = text_to_summarize, max_output_length = 350)
+                    result = self.ai_core.summarize(text = text_to_summarize, max_output_length = 500)
                     return {'summary':result, 'status':'ok'}
                 except Exception as e:
                     return {'error':e, 'status':'error'}
@@ -38,6 +39,8 @@ class YoutubeSummarizerAI():
 
                 text_to_summarize = " ".join(summarized_chunks)
                 new_max_chunk_length -= 80
+            
+            attempt += 1
 
             
 
