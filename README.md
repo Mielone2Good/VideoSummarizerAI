@@ -39,6 +39,16 @@ This project allows you to generate AI-powered summaries of YouTube videos using
 
 💡 It works even for long transcripts or complex documents.
 
+### Version 1.1
+
+📃 Added Gradio Frontend
+⚙️ You can now select summary length:
+- very short
+- short
+- normal
+- long
+- very long
+
 ### 🔍 How it works
 
 1. **Transcript download** using `get_transcript`.
@@ -103,6 +113,16 @@ Author: **Mikołaj Jaros. (aka MixDevv)**
 --- 
 
 ## 📷 Screenshots
+
+### Gradio Frontend - Test on Iphone Ad, Short summary mode
+<img width="1100" alt="Zrzut ekranu 2025-07-30 231911" src="https://github.com/user-attachments/assets/7454f429-93c1-4b76-8be9-4444ed72db6c" />
+
+---
+
+### Gradio Frontend - Test on Iphone Ad, Very long summary mode
+<img width="1100" alt="Zrzut ekranu 2025-07-30 231938" src="https://github.com/user-attachments/assets/e2df57ce-c558-42bd-b5d1-7365e23ecdd6" />
+
+---
 
 ### Request Sent - Test on iPhone Ad  
 <img width="1100" alt="RequestSent_test_on_phone_ad" src="https://github.com/user-attachments/assets/4559673e-1bc7-40b5-9d23-1ce8b391c2c5" />
